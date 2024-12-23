@@ -5,6 +5,8 @@ build
   publish = ".next"
 
 [[
-plugins
+redirects
 ]]
- package = "@netlify/plugin-nextjs"
+  from = "/*"
+  to = "/index.html"
+  status = 200
