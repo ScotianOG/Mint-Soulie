@@ -43,7 +43,7 @@ const benefits = [
   },
   {
     icon: <Brain className="w-8 h-8 text-green-500" />,
-    title: "AI Analytics Agentt",
+    title: "AI Analytics Agent",
     description: "Advanced market insights and analysis",
   },
 ];
@@ -95,6 +95,7 @@ export const MintSection = () => {
   const [mintCount, setMintCount] = useState(1);
   const MINT_PRICE = 0.25;
   const MAX_MINT = 5;
+
 
   return (
     <div className="pt-20">
@@ -326,7 +327,12 @@ export const TradingSection = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  {feature.points.map((point, idx) => (
+                  {[
+                    "Real-time market data",
+                    "Customizable trading strategies",
+                    "24/7 trading",
+                    "Advanced risk management"
+                  ].map((point, idx) => (
                     <li
                       key={idx}
                       className="flex items-center gap-2 text-gray-300"
